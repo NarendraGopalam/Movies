@@ -1,0 +1,17 @@
+﻿@model Movies.Models.Films
+<section class="movie-card">
+    <header >
+    <h2>@Model.Title</h2>
+        </header>
+    <section>
+    <p>@Model.Description</p>
+    <time datetime="@Model.Duration">@Model.Duration</time>
+        </section>
+    <hr/>
+    <ul >
+        @foreach (string movie in Model.Movie)
+        {
+        <li>@movie</li>
+        }
+        </ul>
+    </section>
